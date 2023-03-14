@@ -1,10 +1,13 @@
 #include <iostream>
+
+//in order to write less, I defined the for's I'll use the most in a very short form;
 #define fori3 for(i=0; i<3; i++)
 #define forj3 for(j=0; j<3; j++)
 
-//using namespace std;
+// i and  j are global variables because I am going to use them in different functions;
 int i, j;
 
+//functions prototypes;
 int construct(int m[100][100]);
 void matrix(int m[100][100]);
 int determinant (int m[100][100]);
@@ -26,6 +29,7 @@ int main(){
     return 0;
 }
 
+//this function is contructing the matrix by herself;
 int construct (int m[100][100]){
     srand(time(NULL));
 
@@ -42,6 +46,7 @@ int construct (int m[100][100]){
     }
 }
 
+//this function is displaying the matrix in a readable form;
 void matrix (int m[100][100]){
     fori3{
         forj3{
@@ -51,6 +56,7 @@ void matrix (int m[100][100]){
     }
 }
 
+//this function is calculation and returning to the main function the determinant of the matrix;
 int determinant(int m[100][100]){
     int p_dp, p_t1p, p_t2p;
     int p_ds, p_t1s, p_t2s;
