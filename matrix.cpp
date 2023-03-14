@@ -56,7 +56,7 @@ void matrix (int m[100][100]){
     }
 }
 
-//this function is calculation and returning to the main function the determinant of the matrix;
+//this function is calculating and returning to the main function the determinant of the matrix;
 int determinant(int m[100][100]){
     int p_dp, p_t1p, p_t2p;
     int p_ds, p_t1s, p_t2s;
